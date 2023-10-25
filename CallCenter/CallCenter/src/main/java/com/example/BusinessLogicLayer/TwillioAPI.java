@@ -13,17 +13,17 @@ import org.apache.http.auth.UsernamePasswordCredentials;
 import org.apache.http.auth.AuthScope;
 
 public class TwillioAPI {
-    private static String twilioAccountSid = "AC2314c44adf5d37330fc63056c8649e41";
-    private static String authToken = "authtoken";  // Replace with your Twilio Auth Token
-    private static String fromPhoneNumber = "+12296290612";
-    private static String twilioApiUrl = "https://api.twilio.com/2010-04-01/Accounts/" + twilioAccountSid + "/Calls.json";
+    public static String twilioAccountSid = "AC2314c44adf5d37330fc63056c8649e41";
+    public static String authToken = "e77cfdeb3b653d1cd32c0781d9457a63";  // Replace with your Twilio Auth Token
+    public static String fromPhoneNumber = "+12296290612";
+    public static String twilioApiUrl = "https://api.twilio.com/2010-04-01/Accounts/" + twilioAccountSid + "/Calls.json";
 
-    private static String getBase64Credentials() {
+    public static String getBase64Credentials() {
         String credentials = twilioAccountSid + ":" + authToken;
         return java.util.Base64.getEncoder().encodeToString(credentials.getBytes());
     }
 
-    private static void makeTwilioCall() {
+    public void makeTwilioCall() {
         try {
             // Create a CredentialsProvider instance
             CredentialsProvider credentialsProvider = new BasicCredentialsProvider();
@@ -59,7 +59,7 @@ public class TwillioAPI {
     }
 
      // New method for sending order details
-     private static void sendOrderDetails(String orderDetails, String toPhoneNumber) {
+     public void sendOrderDetails(String orderDetails, String toPhoneNumber) {
         try {
             // Create a CredentialsProvider instance
             CredentialsProvider credentialsProvider = new BasicCredentialsProvider();
@@ -94,7 +94,5 @@ public class TwillioAPI {
         }
     }
 
-    public static void main(String[] args) {
-        makeTwilioCall();
-    }
+    
 }
