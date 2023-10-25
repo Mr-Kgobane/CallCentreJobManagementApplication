@@ -14,8 +14,8 @@ import org.apache.http.auth.AuthScope;
 
 public class TwillioAPI {
     private static String twilioAccountSid = "AC2314c44adf5d37330fc63056c8649e41";
-    private static String authToken = "d385b2557d693549313a1549e0f17594";  // Replace with your Twilio Auth Token
-    private static String fromPhoneNumber = "+27826290478";
+    private static String authToken = "authtoken";  // Replace with your Twilio Auth Token
+    private static String fromPhoneNumber = "+12296290612";
     private static String twilioApiUrl = "https://api.twilio.com/2010-04-01/Accounts/" + twilioAccountSid + "/Calls.json";
 
     private static String getBase64Credentials() {
@@ -39,6 +39,42 @@ public class TwillioAPI {
 
             // Set the "From" phone number as a request parameter
             String requestBody = "{\"From\":\"" + fromPhoneNumber + "\"}";
+            httpPost.setEntity(new StringEntity(requestBody));
+
+            // Set the "Content-Type" header to application/json
+            httpPost.setHeader("Content-Type", "application/json");
+
+            // Execute the POST request
+            HttpResponse response = httpclient.execute(httpPost);
+
+            // Get the response entity and convert it to a string
+            HttpEntity responseEntity = response.getEntity();
+            String responseString = EntityUtils.toString(responseEntity);
+
+            // Handle the response as needed
+            System.out.println("Response: " + responseString);
+        } catch (Exception e) {
+            System.out.println("An error occurred: " + e.getMessage());
+        }
+    }
+
+     // New method for sending order details
+     private static void sendOrderDetails(String orderDetails, String toPhoneNumber) {
+        try {
+            // Create a CredentialsProvider instance
+            CredentialsProvider credentialsProvider = new BasicCredentialsProvider();
+            credentialsProvider.setCredentials(AuthScope.ANY, new UsernamePasswordCredentials(twilioAccountSid, authToken));
+
+            // Create a HttpClient instance with Basic Authentication
+            HttpClient httpclient = HttpClients.custom()
+                    .setDefaultCredentialsProvider(credentialsProvider)
+                    .build();
+
+            // Create a POST request
+            HttpPost httpPost = new HttpPost(twilioApiUrl);
+
+            // Construct the request body with order details
+            String requestBody = "{\"From\":\"" + fromPhoneNumber + "\",\"To\":\"" + toPhoneNumber + "\",\"Body\":\"" + orderDetails + "\"}";
             httpPost.setEntity(new StringEntity(requestBody));
 
             // Set the "Content-Type" header to application/json
