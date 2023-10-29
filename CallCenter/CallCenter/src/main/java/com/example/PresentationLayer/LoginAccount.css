@@ -1,0 +1,103 @@
+.login-account-child {
+  position: absolute;
+  top: 37px;
+  left: 0;
+  background-color: #d9d9d9;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 1440px;
+  height: 82px;
+  mix-blend-mode: overlay;
+}
+.ai {
+  position: absolute;
+  top: 56px;
+  left: 118px;
+  font-size: var(--font-size-17xl);
+  font-weight: 800;
+  font-family: var(--font-inter);
+}
+.login-account-item {
+  position: absolute;
+  top: 322px;
+  left: 478px;
+  border-radius: 40px;
+  background-color: rgba(217, 217, 217, 0.09);
+  box-shadow: 39.9px -39.9px 39.87px rgba(165, 165, 165, 0.09) inset,
+    -39.9px 39.9px 39.87px rgba(255, 255, 255, 0.09) inset;
+  backdrop-filter: blur(94.09px);
+  width: 547px;
+  height: 439px;
+}
+.login1 {
+  position: absolute;
+  top: 352px;
+  left: 657px;
+  font-size: 50px;
+  font-weight: 800;
+  font-family: var(--font-orbitron);
+  color: var(--color-skyblue);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.login-account-inner {
+  position: absolute;
+  top: 456px;
+  left: 530px;
+  background-color: #969696;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 444px;
+  height: 55px;
+  mix-blend-mode: overlay;
+}
+.password,
+.username {
+  position: absolute;
+  left: 554px;
+  font-weight: 800;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.username {
+  top: 467px;
+  color: #fbfcff;
+  -webkit-text-stroke: 1px #000;
+}
+.password {
+  top: 546px;
+  color: #fdfeff;
+}
+.rectangle-icon {
+  position: absolute;
+  top: 534.5px;
+  left: 526px;
+  width: 452px;
+  height: 63px;
+  mix-blend-mode: overlay;
+}
+.forgot-usernamepassword {
+  position: absolute;
+  top: 603px;
+  left: 543px;
+  font-size: 20px;
+  font-weight: 800;
+  color: #a4a7f0;
+  text-shadow: 0 10px 4px rgba(0, 0, 0, 0.25);
+}
+.component-1 {
+  width: 179px;
+  position: absolute;
+  top: 669px;
+  left: 667px;
+}
+.login-account {
+  position: relative;
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  background-image: url(/public/login-account@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: left;
+  font-size: var(--font-size-6xl);
+  color: var(--color-white);
+  font-family: var(--font-neuton);
+}
