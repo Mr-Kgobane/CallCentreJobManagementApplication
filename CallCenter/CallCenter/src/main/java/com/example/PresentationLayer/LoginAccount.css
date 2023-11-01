@@ -1,0 +1,104 @@
+.login-account-child {
+  position: absolute;
+  top: 2.31rem;
+  left: 0;
+  background-color: var(--color-gainsboro-100);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 90rem;
+  height: 5.13rem;
+  mix-blend-mode: overlay;
+}
+.ai7 {
+  position: absolute;
+  top: 3.5rem;
+  left: 7.38rem;
+  font-size: var(--font-size-17xl);
+  font-weight: 800;
+  font-family: var(--font-inter);
+}
+.login-account-item {
+  position: absolute;
+  top: 20.13rem;
+  left: 29.88rem;
+  border-radius: 40px;
+  background-color: rgba(217, 217, 217, 0.09);
+  box-shadow: 39.9px -39.9px 39.87px rgba(165, 165, 165, 0.09) inset,
+    -39.9px 39.9px 39.87px rgba(255, 255, 255, 0.09) inset;
+  backdrop-filter: blur(94.09px);
+  width: 34.19rem;
+  height: 27.44rem;
+}
+.login8 {
+  position: absolute;
+  top: 22rem;
+  left: 41.06rem;
+  font-size: 3.13rem;
+  font-weight: 800;
+  font-family: var(--font-orbitron);
+  color: var(--color-skyblue);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.login-account-inner {
+  position: absolute;
+  top: 28.5rem;
+  left: 33.13rem;
+  background-color: #969696;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 27.75rem;
+  height: 3.44rem;
+  mix-blend-mode: overlay;
+}
+.password,
+.username {
+  position: absolute;
+  left: 34.63rem;
+  font-weight: 800;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.username {
+  top: 29.19rem;
+  color: #fbfcff;
+  -webkit-text-stroke: 1px #000;
+}
+.password {
+  top: 34.13rem;
+  color: #fdfeff;
+}
+.login-account-child1 {
+  position: absolute;
+  top: 33.41rem;
+  left: 32.88rem;
+  width: 28.25rem;
+  height: 3.94rem;
+  mix-blend-mode: overlay;
+}
+.forgot-usernamepassword {
+  position: absolute;
+  top: 37.69rem;
+  left: 33.94rem;
+  font-size: var(--font-size-xl);
+  font-weight: 800;
+  color: #a4a7f0;
+  text-shadow: 0 10px 4px rgba(0, 0, 0, 0.25);
+}
+.component-17 {
+  width: 11.19rem;
+  position: absolute;
+  top: 41.81rem;
+  left: 41.69rem;
+}
+.login-account {
+  position: relative;
+  width: 100%;
+  height: 64rem;
+  overflow: hidden;
+  background-image: url(/public/login-account@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: left;
+  font-size: var(--font-size-6xl);
+  color: var(--color-white);
+  font-family: var(--font-neuton);
+}
+
