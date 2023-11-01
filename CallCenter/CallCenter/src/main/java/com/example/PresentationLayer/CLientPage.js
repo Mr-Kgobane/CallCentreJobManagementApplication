@@ -1,7 +1,6 @@
-import { FunctionComponent } from "react";
 import "./CLientPage.css";
 
-const CLientPage: FunctionComponent = () => {
+const CLientPage = () => {
   return (
     <div className="client-page">
       <div className="client-page1">
@@ -10,21 +9,18 @@ const CLientPage: FunctionComponent = () => {
         <div className="place-call">PLACE CALL</div>
         <div className="client-page-inner" />
         <div className="john-doe-">John Doe -</div>
-        <div className="ai">AI</div>
-        <img className="rectangle-icon" alt="" src="/rectangle-4175.svg" />
-        <img className="client-page-child1" alt="" src="/rectangle-4217.svg" />
-        <div className="line-div" />
-        <div className="client-page-child2" />
+        <div className="ai6">AI</div>
+        <img className="client-page-child1" alt="" src="/rectangle-4175.svg" />
+        <img className="client-page-child2" alt="" src="/rectangle-4217.svg" />
+        <div className="client-page-child3" />
+        <div className="client-page-child4" />
         <div className="done">Done</div>
         <div className="pending">Pending</div>
         <div className="initiated">Initiated</div>
-        <div className="call-history">Call History</div>
+        <div className="call-history7">Call History</div>
         <div className="this-week">This Week</div>
         <div className="last-week">Last Week</div>
-        <div className="last-month">Last Month</div>
-        <div className="rectangle-div" />
-        <div className="client-page-child3" />
-        <div className="client-page-child4" />
+        <div className="last-month1">Last Month</div>
         <div className="client-page-child5" />
         <div className="client-page-child6" />
         <div className="client-page-child7" />
@@ -37,9 +33,12 @@ const CLientPage: FunctionComponent = () => {
         <div className="client-page-child14" />
         <div className="client-page-child15" />
         <div className="client-page-child16" />
-        <div className="component-1">
-          <div className="component-1-child" />
-          <div className="login1">LOGOUT</div>
+        <div className="client-page-child17" />
+        <div className="client-page-child18" />
+        <div className="client-page-child19" />
+        <div className="component-16">
+          <div className="component-1-child3" />
+          <div className="login7">LOGOUT</div>
         </div>
         <img
           className="icon-call-received-1-1"
@@ -49,7 +48,7 @@ const CLientPage: FunctionComponent = () => {
         <img
           className="icon-call-received-5"
           alt=""
-          src="/-icon--call-received--5@2x.png"
+          src="/-icon--call-received--1@2x.png"
         />
         <img className="icon-person-1" alt="" src="/-icon--person--1@2x.png" />
       </div>
@@ -65,14 +64,15 @@ const CLientPage: FunctionComponent = () => {
       <div className="outgoing-call3">Outgoing Call</div>
       <div className="outgoing-call4">Outgoing Call</div>
       <div className="outgoing-call5">Outgoing Call</div>
-      <div className="div">05:05</div>
-      <div className="div1">01:20</div>
-      <div className="div2">02:23</div>
-      <div className="div3">04:15</div>
-      <div className="div4">00:59</div>
-      <div className="div5">03:59</div>
+      <div className="div7">05:05</div>
+      <div className="div8">01:20</div>
+      <div className="div9">02:23</div>
+      <div className="div10">04:15</div>
+      <div className="div11">00:59</div>
+      <div className="div12">03:59</div>
     </div>
   );
 };
 
 export default CLientPage;
+
