@@ -1,8 +1,9 @@
-import { FunctionComponent, useCallback } from "react";
+
+import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import "./CallHistory.css";
 
-const CallHistory: FunctionComponent = () => {
+const CallHistory = () => {
   const navigate = useNavigate();
 
   const onRectangle2Click = useCallback(() => {
@@ -14,31 +15,31 @@ const CallHistory: FunctionComponent = () => {
   }, [navigate]);
 
   return (
-    <div className="call-history">
+    <div className="call-history1">
       <div className="frame">
-        <div className="dashboard">
+        <div className="dashboard1">
           <div className="frame1">
             <div className="frame-child" />
             <img className="frame-item" alt="" src="/ellipse-1@2x.png" />
             <div className="frame-inner" />
-            <div className="call-history1">Call history</div>
-            <div className="ticket-details">Ticket Details</div>
-            <div className="rectangle-div" onClick={onRectangle2Click} />
-            <div className="frame-child1" />
+            <div className="call-history2">Call history</div>
+            <div className="ticket-details1">Ticket Details</div>
+            <div className="frame-child1" onClick={onRectangle2Click} />
             <div className="frame-child2" />
             <div className="frame-child3" />
             <div className="frame-child4" />
             <div className="frame-child5" />
             <div className="frame-child6" />
-            <div className="ai">AI</div>
-            <img className="rectangle-icon" alt="" src="/rectangle-4172.svg" />
             <div className="frame-child7" />
-            <div className="frame-child8" />
+            <div className="ai1">AI</div>
+            <img className="frame-child8" alt="" src="/rectangle-4172.svg" />
             <div className="frame-child9" />
             <div className="frame-child10" />
             <div className="frame-child11" />
             <div className="frame-child12" />
             <div className="frame-child13" />
+            <div className="frame-child14" />
+            <div className="frame-child15" />
             <div className="home1">
               <div className="home2">Today</div>
               <img className="home-child" alt="" src="/line-1.svg" />
@@ -53,11 +54,11 @@ const CallHistory: FunctionComponent = () => {
             </div>
             <div className="last-month">Last month</div>
             <div className="months-ago">6 months ago</div>
-            <div className="line-div" />
+            <div className="frame-child16" />
             <div className="admin">ADMIN</div>
-            <div className="component-1">
-              <div className="component-1-child" />
-              <div className="login1">LOGOUT</div>
+            <div className="component-11">
+              <div className="component-1-item" />
+              <div className="login2">LOGOUT</div>
             </div>
             <div className="div">05:05</div>
             <div className="received">Received</div>
@@ -73,7 +74,7 @@ const CallHistory: FunctionComponent = () => {
             <div className="div4">00:10</div>
             <div className="div5">06:15</div>
             <div className="div6">00:30</div>
-            <div className="john-doe">John Doe</div>
+            <div className="john-doe1">John Doe</div>
             <div className="dan-smin">Dan Smin</div>
             <div className="max-dune">Max Dune</div>
             <div className="tony-leo">Tony Leo</div>
@@ -125,17 +126,17 @@ const CallHistory: FunctionComponent = () => {
               alt=""
               src="/-icon--call-remove--1@2x.png"
             />
-            <div className="frame-child14" />
+            <div className="frame-child17" />
             <div className="call-history-page">Call History Page</div>
           </div>
           <div className="frame2">
-            <div className="frame-child15" />
-            <div className="frame-child16" />
+            <div className="frame-child18" />
+            <div className="frame-child19" />
           </div>
         </div>
         <div className="frame3">
           <div
-            className="contract-details"
+            className="contract-details1"
             onClick={onContractDetailsTextClick}
           >
             Contract Details
