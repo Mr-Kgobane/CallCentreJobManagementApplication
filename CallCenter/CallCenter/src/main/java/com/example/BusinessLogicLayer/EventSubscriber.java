@@ -1,5 +1,5 @@
 package com.example.BusinessLogicLayer;
 
 public interface EventSubscriber {
-    void update(String message);
+    void receiveEvent(String event);
 }
